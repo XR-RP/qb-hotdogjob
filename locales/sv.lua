@@ -7,6 +7,7 @@ local Translations = {
         no_stand_found = 'Din korv-vagn går inte att hitta någonstans, du får inte tillbaka din deposition!',
         no_more = 'Du har inga %{value} kvar inför fullmäktige',
         deposit_notreturned = 'Du hade ingen korv-vagn',
+        no_dogs = 'Du har inga korvar kvar',
     },
     success = {
         deposit = 'Du betalade %{deposit} kr i deposition!',
@@ -16,23 +17,30 @@ local Translations = {
         made_luck_hotdog = 'Du gjorde %{value} x %{value2} Varmkorvar',
     },
     info = {
-        command = "Ta bord korv-vagn (Endast Admin)",
+        command = "Ta bort korv-vagn (Endast Admin)",
         blip_name = 'Korv-vagn',
-        start_working = '[~g~E~s~] Börja jobba',
+        start_working = '[E] Börja jobba',
         start_work = 'Börja jobba',
-        stop_working = '[~g~E~s~] Sluta jobba',
+        stop_working = '[E] Sluta jobba',
         stop_work = 'Sluta jobba',
         grab_stall = '[~g~G~s~] Greppa vagnen',
         drop_stall = '[~g~G~s~] Släpp vagnen',
         grab = 'Greppa vagnen',
+        prepare = 'Förbered Korv',
+        toggle_sell = 'Börja/sluta sälja',
         selling_prep = '[~g~E~s~] Förberedelse av korv [Försäljning: ~g~Säljer~w~]',
         not_selling = '[~g~E~s~] Förberedelse av korv [Försäljning: ~r~Säljer inte~w~]',
         sell_dogs = '[~g~7~s~] Sälj %{value} x varmkorvar för $%{value2} / [~g~8~s~] Avböj',
+        sell_dogs_target = 'Sälj %{value} x korvar för $%{value2}',
         admin_removed = "Korv-vagnen borttagen",
         label_a = "Perfekt (A)",
         label_b = "Mycket bra (B)",
         label_c = "Ok (C)"
-    }
+    },
+    keymapping = {
+    gkey = 'Släpp korv-vagnen',
+    
+}
 }
 
 if GetConvar('qb_locale', 'en') == 'sv' then
